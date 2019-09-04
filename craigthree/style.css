@@ -1,0 +1,447 @@
+/*
+Theme Name: Craig Three
+Theme URI: https://craigphares.com/themes/craigthree
+Author: Craig Phares
+Author URI: https://craigphares.com/
+Description: Blog for Craig Phares.
+Version: 3.0
+License: MIT
+License URI: https://opensource.org/licenses/MIT
+Tags: monochromatic
+Text Domain: craigphares
+*/
+
+html, body { 
+    /* background-color: #FFFBF5;  */
+    background-color: #fff;
+}
+
+body {
+    color: #06272D;
+    font-family: goudy-old-style, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.125em; /* 18px */
+    line-height: 1.56;
+}
+
+a {
+    color: #B92954;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+    margin-top: 0;
+}
+
+h2,  h3, h4 {
+    font-family: nimbus-sans, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 2.22222em; /* 40px */
+}
+
+h2 {
+    font-size: 1.666666em; /* 30px */
+}
+
+h3 {
+    font-size: 1.333333em; /* 24px */
+}
+
+p {
+    margin-bottom: 0;
+}
+
+img {
+    filter: saturate(10%) contrast(120%);
+}
+
+    img.emoji {
+        filter: none;
+    }
+
+ul, ol {
+    padding-left: 30px;
+}
+
+hr {
+    height: 0;
+    border: 0;
+    /* border-top: 1px solid #06272D; */
+    border-top: 1px solid #e5e3e4;
+    padding: 0;
+}
+
+figcaption,
+.wp-block-image figcaption {
+    font-size: 0.888888em;
+    font-family: nimbus-sans, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    color: #829396;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+    figcaption a {
+        color: inherit;
+    }
+
+        figcaption a:hover {
+            background-color: #e5e3e4;
+        }
+
+.alignleft {
+    float: left;
+    margin-right: 1em;
+}
+
+.grime {
+    mask-image: url(images/grime2.png);
+    -webkit-mask-image: url(images/grime2.png);
+}
+
+.site {
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.craig-home {
+    display: inline-block;
+}
+
+    .craig-home img {
+        display: block;
+        width: 45px;
+        border-radius: 50%;
+    }
+
+    .craig-home:hover img {
+        filter: saturate(30%) contrast(120%);
+    }
+
+    .home .craig-home img {
+        width: 100%;
+    }
+
+.hentry {
+    margin-top: 1em;
+}
+
+.entry-meta {
+    font-family: nimbus-sans, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0.5;
+}
+
+.entry-title {
+    margin-top: 0;
+}
+
+    h3.entry-title {
+        font-family: inherit;
+    }
+
+        h3.entry-title a {
+            transition-duration: 0.2s;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+
+            h3.entry-title a:hover {
+                /* text-decoration: underline; */
+                background-color: #e5e3e4;
+            }
+
+.entry-header .wp-post-image {
+    margin-top: 0;
+    border-radius: 3px;
+}
+
+.post-thumbnail {
+    margin: 0;
+}
+
+.entry-content p:first-child {
+    margin-top: 0;
+}
+
+.entry-content a {
+    transition-duration: 0.2s;
+    color: inherit;
+    border-radius: 3px;
+}
+
+    .entry-content a img {
+        display: block;
+    }
+
+    .entry-content a:hover {
+        /* filter: saturate(10%) contrast(120%) opacity(75%);
+        background-color: rgba(185, 41, 84, 0.2); */
+        background-color: #e5e3e4;
+    }
+
+    .entry-content img {
+        max-width: 100%;
+        height: auto;
+    }
+
+.wp-post-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1em;
+    /* margin-bottom: 1em; */
+    margin-bottom: 0.5em;
+}
+
+.sidebar, .sidebar ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.2;
+}
+
+    .sidebar > li {
+        margin: 1em 0;
+    }
+
+    .sidebar > li > ul > li {
+        margin: 0.5em 0;
+    }
+
+    .sidebar a {
+        transition-duration: 0.2s;
+        text-decoration: none;
+        border-radius: 3px;
+    }
+
+        .sidebar a:hover {
+            /* text-decoration: underline; */
+            /* filter: saturate(10%) contrast(120%) opacity(75%);
+            background-color: rgba(185, 41, 84, 0.2); */
+            background-color: #e5e3e4;
+        }
+
+.widgettitle {
+    font-size: 1.22222em; /* 22px */
+    margin-bottom: 0;
+}
+
+.wp-block-code, 
+.wp-block-preformatted, 
+pre[class*=language-].wp-block-code {
+    /* font-size: 0.777777em; */
+    font-size: 0.666666em; /* 12px */
+    /* padding: 0.5em 1em; */
+    /* border: 1px solid #ddd; */
+    border-radius: 3px;
+    overflow-x: auto;
+    background: #06272D;
+    color: #fff;
+}
+
+.wp-block-embed {
+    margin: 1em 0;
+}
+
+.wp-block-quote {
+    border-left: 3px #06272D solid;
+    margin-left: -20px;
+    margin-right: 0;
+    /* padding-left: 17px; */
+    background-color: #e5e3e4;
+    padding: 0.5em 0.5em 0.5em 17px;
+}
+
+    .wp-block-quote.is-style-large {
+        border-left: none;
+        font-size: 1.666666em; /* 30px */
+        margin: 1em 0;
+        background-color: inherit;
+        padding: 0 1em;
+    }
+
+        .wp-block-quote.is-style-large p {
+            font-style: inherit;
+            font-size: inherit;
+        }
+
+.menu {
+    list-style: none;
+    padding-left: 0;
+}
+
+.site-footer {
+    /* font-family: nimbus-sans, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.877777em; /* 15.8px */
+    /* border-top: 1px #06272D solid; */
+    border-top: 1px solid #e5e3e4;
+    margin-top: 2em;
+}
+
+.footer-navigation .menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-navigation li {
+    margin-left: 1em;
+}
+
+.footer-navigation a {
+    color: inherit;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+    .footer-navigation a:hover {
+        /* text-decoration: underline; */
+        background-color: #e5e3e4;
+    }
+
+.site-name {
+    text-decoration: none;
+    color: inherit;
+}
+
+.widget_craig_newsletter {
+    background-color: #06272D;
+    color: #fff;
+    padding: 24px;
+    border-radius: 3px;
+}
+
+    .widget_craig_newsletter h2 {
+        margin-top: 0;
+        font-family: inherit;
+        display: none;
+    }
+
+    .widget_craig_newsletter__intro {
+        font-size: 1.333333em; /* 24px */
+        margin-bottom: 1em;
+    }
+
+    .widget_craig_newsletter label {
+        display: none;
+    }
+
+    .widget_craig_newsletter input[type="email"] {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        color: #fff;
+    }
+
+    .widget_craig_newsletter input[type="email"]::placeholder {
+        color: #fff;
+        opacity: 0.75;
+    }
+
+    .widget_craig_newsletter .clear {
+        margin: 48px -24px -24px -24px;
+    }
+
+    .widget_craig_newsletter input[type="submit"] {
+        display: block;
+        background-color: #B92954;
+        color: #fff;
+        border: none;
+        width: 100%;
+        font-family: nimbus-sans, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 0.5em;
+        font-size: 1.333333em; /* 24px */
+        outline: none;
+        cursor: pointer;
+        border-radius: 0 0 3px 3px;
+    }
+
+        .widget_craig_newsletter  input[type="submit"]:hover {
+            /* background-color: #e5e3e4; */
+            filter: saturate(120%);
+        }
+
+.widget_craig_social .fab {
+    /* color: #e5e3e4; */
+    opacity: 0.4;
+}
+
+.tags {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.833333em; /* 15px */
+}
+
+    .tags li {
+        margin-right: 0.5em;
+    }
+
+    .tags a {
+        display: inline-block;
+        background-color: #B92954;
+        color: #fff;
+        text-decoration: none;
+        padding: 0.25em 0.5em;
+        filter: saturate(10%) contrast(120%) opacity(75%);
+        border-radius: 3px;
+        transition-duration: 0.2s;
+    }
+
+        .tags a:hover {
+            transition: 0.2s;
+            filter: none;
+        }
+
+.twitter-tweet, .twitter-collection {
+    filter: saturate(50%);
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .site {
+        max-width: 680px;
+    }
+
+    .site-header {
+        width: 236px;
+    }
+
+    .home .content-area {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    #secondary {
+        width: 236px;
+    }
+
+    .home .site-main {
+        width: 420px;
+        margin-top: -236px;
+    }
+
+    .entry-header .wp-post-image {
+        max-width: 320px;
+    }
+
+
+}

@@ -1,0 +1,32 @@
+version: '3.1'
+
+services:
+
+  wordpress:
+    image: wordpress
+    ports:
+      - 9999:80
+    environment:
+      WORDPRESS_DB_PASSWORD: example
+    volumes:
+      - ./craigthree:/var/www/html/wp-content/themes/craigthree
+      - ./craig_newsletter:/var/www/html/wp-content/plugins/craig_newsletter
+      - ./craig_social:/var/www/html/wp-content/plugins/craig_social
+      - ./craig_gist:/var/www/html/wp-content/plugins/craig_gist
+      - ./uploads:/var/www/html/wp-content/uploads
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+
+  phpmyadmin:
+    depends_on:
+      - mysql
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: example
