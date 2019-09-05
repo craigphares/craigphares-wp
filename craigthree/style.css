@@ -60,6 +60,12 @@ p {
     margin-bottom: 0;
 }
 
+code {
+    font-size: 0.75em;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 2px 4px;
+}
+
 img {
     filter: saturate(10%) contrast(120%);
 }
@@ -411,6 +417,19 @@ pre[class*=language-].wp-block-code {
 
 .twitter-tweet, .twitter-collection {
     filter: saturate(50%);
+}
+
+.circular, .circular img {
+    border-radius: 50%;
+}
+
+.nofilter, .nofilter img {
+    filter: none;
+}
+
+.wp-block-columns img {
+    width: 100%;
+    display: block;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
