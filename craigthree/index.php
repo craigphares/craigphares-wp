@@ -7,7 +7,7 @@
                 the_post(); 
                 if ( is_sticky() ) {
                     get_template_part('template-parts/content', 'sticky');
-                } else if ( is_single() || is_front_page() ) {
+                } else if ( is_single() || is_front_page() || is_page() ) {
                     get_template_part('template-parts/content', 'single');
                 } else {
                     get_template_part('template-parts/content');
@@ -27,6 +27,15 @@
         <?php } ?>
         <?php if ( is_single() && !is_front_page() ) { ?>
             <!-- <hr> -->
+            <aside class="widget-area" role="complementary">
+                <?php if ( is_active_sidebar( 'sidebar-3' ) ) : ?>
+                    <ul class="sidebar">
+                        <?php dynamic_sidebar( 'sidebar-3' ); ?>
+                    </ul>
+                <?php endif; ?>
+            </aside>
+        <?php } ?>
+        <?php if ( is_page() && !is_front_page() ) { ?>
             <aside class="widget-area" role="complementary">
                 <?php if ( is_active_sidebar( 'sidebar-3' ) ) : ?>
                     <ul class="sidebar">

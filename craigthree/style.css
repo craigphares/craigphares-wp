@@ -391,12 +391,14 @@ pre[class*=language-].wp-block-code {
 .tags {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
     padding-left: 0;
     font-size: 0.833333em; /* 15px */
 }
 
     .tags li {
         margin-right: 0.5em;
+        margin-bottom: 0.5em;
     }
 
     .tags a {

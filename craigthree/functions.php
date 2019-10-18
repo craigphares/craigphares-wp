@@ -95,4 +95,3 @@ function cp_head() {
 
 }
 add_action( 'wp_head', 'cp_head', 5 );
-
