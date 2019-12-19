@@ -31,7 +31,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
-    margin-bottom: 0;
+    margin-bottom: 0.125em;
 }
 
 h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
@@ -40,7 +40,7 @@ h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
 
 h2,  h3, h4 {
     font-family: nimbus-sans, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -263,7 +263,6 @@ pre[class*=language-].wp-block-code {
     border-left: 3px #06272D solid;
     margin-left: -20px;
     margin-right: 0;
-    /* padding-left: 17px; */
     background-color: #e5e3e4;
     padding: 0.5em 0.5em 0.5em 17px;
 }
@@ -273,12 +272,14 @@ pre[class*=language-].wp-block-code {
         font-size: 1.666666em; /* 30px */
         margin: 1em 0;
         background-color: inherit;
-        padding: 0 1em;
+        /* padding: 0 1em; */
+        padding: 0;
     }
 
         .wp-block-quote.is-style-large p {
             font-style: inherit;
             font-size: inherit;
+            line-height: 1.4;
         }
 
 .menu {
