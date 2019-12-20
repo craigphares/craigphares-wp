@@ -109,6 +109,11 @@ figcaption,
     margin-right: 1em;
 }
 
+.nostyle {
+    list-style: none;
+    padding-left: 0;
+}
+
 .grime {
     mask-image: url(images/grime2.png);
     -webkit-mask-image: url(images/grime2.png);
