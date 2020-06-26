@@ -13,6 +13,12 @@
                     get_template_part('template-parts/content');
                 }
             } // end while
+            ?>
+            <div class="pagination">
+                <span class="nav-previous alignleft"><?php previous_posts_link( 'Previous' ); ?></span>
+                <span class="nav-next alignright"><?php next_posts_link( 'Next' ); ?></span>
+            </div>
+            <?php
         } // end if
         ?>
         <?php if ( is_front_page() ) { ?>

@@ -109,6 +109,11 @@ figcaption,
     margin-right: 1em;
 }
 
+.alignright {
+    float: right;
+    margin-left: 1em;
+}
+
 .nostyle {
     list-style: none;
     padding-left: 0;
