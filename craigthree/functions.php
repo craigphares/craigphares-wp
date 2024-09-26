@@ -99,3 +99,7 @@ function cp_head() {
 
 }
 add_action( 'wp_head', 'cp_head', 5 );
+
+@ini_set( 'upload_max_size', '256M' );
+@ini_set( 'post_max_size', '256M');
+@ini_set( 'max_execution_time', '300' );
